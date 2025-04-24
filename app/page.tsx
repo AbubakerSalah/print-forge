@@ -1,7 +1,32 @@
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>Hello from the Home page!</h1>
-    </div>
+    <>
+      <main className="flex flex-col md:flex-row items-center md:justify-between md:mx-auto gap-8 md:px-6 py-12 md:max-w-7xl">
+        <div className="px-6">
+          <p className="hidden md:block">
+            Your go-to platform for 3D printing files
+          </p>
+          <h1 className="text-5xl font-semibold my-4">
+            Discover what's possible with 3D printing
+          </h1>
+          <p className="text-2xl">
+            Join our community of creators and explore a vast library of
+            user-submitted models.
+          </p>
+          <div className="mt-8">
+            <button className="border-2 border-black px-2 py-1 uppercase">
+              Browse models
+            </button>
+          </div>
+        </div>
+        <div className="flex justify-center items-center">
+          <img
+            className="rounded-full md:max-w-96"
+            src="./hero-image.png"
+            alt=""
+          />
+        </div>
+      </main>
+    </>
   );
 }
