@@ -1,3 +1,5 @@
+import homeImage from"@/public/hero-image.png";
+
 export default function Home() {
   return (
     <>
@@ -22,8 +24,8 @@ export default function Home() {
         <div className="flex justify-center items-center">
           <img
             className="rounded-full md:max-w-96"
-            src="./hero-image.png"
-            alt=""
+            src={homeImage.src}
+            alt=" PrintForge Community - A group of makers collaborating on 3D printing projects"
           />
         </div>
       </main>
