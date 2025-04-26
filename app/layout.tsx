@@ -1,5 +1,7 @@
 import "./globals.css";
+import type  { RootLayoutProps } from "@app/type";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
+import Link from "next/link";
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
@@ -14,9 +16,7 @@ const montserratAlternates = Montserrat_Alternates({
 });
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: RootLayoutProps) {
   return (
     <html lang="en">
       <body
@@ -24,23 +24,26 @@ export default function RootLayout({
       >
         <header>
           <nav className="flex justify-between items-center py-6 px-8  text-gray-800">
-            <img
-              src="./printforge-logo.svg"
-              alt=""
-              className="w-[200px] h-auto hidden md:block"
-            />
-            {/*Mobile logo*/}
-            <img
-              src="./printforge-logo-icon.svg"
-              alt=""
-              className="w-[40px] h-auto  md:hidden"
-            />
+            <Link href="/">
+              <img
+                src="./printforge-logo.svg"
+                alt=""
+                className="w-[200px] h-auto hidden md:block"
+              />
+              {/*Mobile logo*/}
+              <img
+                src="./printforge-logo-icon.svg"
+                alt=""
+                className="w-[40px] h-auto  md:hidden"
+              />
+            </Link>
+
             <ul className="flex space-x-4">
               <li className="hover:text-orange-400 hover:border-b transition duration-200">
-                <a href="#models">3D Models</a>
+                <Link href="modal">3D Models</Link>
               </li>
               <li className="hover:text-orange-400 hover:border-b transition duration-200">
-                <a href="./about">About</a>
+                <Link href="/about">About</Link>
               </li>
             </ul>
           </nav>
