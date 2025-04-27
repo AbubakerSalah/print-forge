@@ -1,5 +1,5 @@
 import "./globals.css";
-import type  { RootLayoutProps } from "@app/type";
+import type  { RootLayoutProps } from "@app/types";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 import Link from "next/link";
 
@@ -40,7 +40,7 @@ export default function RootLayout({
 
             <ul className="flex space-x-4">
               <li className="hover:text-orange-400 hover:border-b transition duration-200">
-                <Link href="modal">3D Models</Link>
+                <Link href="/3d-modal">3D Models</Link>
               </li>
               <li className="hover:text-orange-400 hover:border-b transition duration-200">
                 <Link href="/about">About</Link>
