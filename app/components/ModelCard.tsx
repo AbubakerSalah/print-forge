@@ -7,7 +7,7 @@ import { ModelCardProps } from "@/app/types";
 export default function ModelCard({ model }: ModelCardProps) {
   return (
     <Link
-      href={`/3d-modals/${model.id}`}
+      href={`/3d-model/${model.id}`}
       className="block group hover:shadow-[0_5px_12px_rgba(0,0,0,0.1)] hover:-translate-y-[3px] transition-all"
       aria-labelledby={`model-${model.id}-title`}
     >
@@ -17,7 +17,7 @@ export default function ModelCard({ model }: ModelCardProps) {
       >
         <div className="relative aspect-square">
           <img
-            src="./hero-image.png"
+            src="/hero-image.png"
             alt={model.name}
             className="absolute inset-0 object-cover w-full h-full"
           />

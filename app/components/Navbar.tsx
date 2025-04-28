@@ -19,7 +19,7 @@ export default function Navbar() {
 
         <ul className="flex space-x-4">
           <li className="hover:text-orange-400 hover:border-b transition duration-200">
-            <Link href="/3d-modal">3D Models</Link>
+            <Link href="/3d-model">3D Models</Link>
           </li>
           <li className="hover:text-orange-400 hover:border-b transition duration-200">
             <Link href="/about">About</Link>
