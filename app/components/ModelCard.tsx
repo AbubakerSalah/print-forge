@@ -7,7 +7,7 @@ import { ModelCardProps } from "@/app/types";
 export default function ModelCard({ model }: ModelCardProps) {
   return (
     <Link
-      href={`/3d-models/${model.id}`}
+      href={`/3d-modals/${model.id}`}
       className="block group hover:shadow-[0_5px_12px_rgba(0,0,0,0.1)] hover:-translate-y-[3px] transition-all"
       aria-labelledby={`model-${model.id}-title`}
     >
@@ -42,7 +42,7 @@ export default function ModelCard({ model }: ModelCardProps) {
             className="flex items-center mt-2 text-gray-600"
             aria-label={`${model.likes} likes`}
           >
-            <CiHeart className="" />
+            <CiHeart className="text-2xl" />
             <span>{model.likes}</span>
           </div>
         </div>
