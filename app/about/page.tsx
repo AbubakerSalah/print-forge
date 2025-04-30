@@ -84,7 +84,7 @@ export default function AboutPage() {
             possible with 3D printing.
           </p>
           <p className="text-gray-700">
-            Whether you are a hobbyist looking for your next weekend project, an
+            Whether you&apos;re a hobbyist looking for your next weekend project, an
             educator seeking teaching materials, or a professional designer
             wanting to share your creations, PrintForge provides the tools and
             community to support your journey in 3D printing.
