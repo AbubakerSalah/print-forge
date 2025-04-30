@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function AboutPage() {
   return (
     <main>
@@ -8,16 +9,15 @@ export default function AboutPage() {
 
         <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
           <div className="relative h-[300px] w-full">
-            <img
-              src="./hero-image.png"
+            <Image
+              src="/hero-image.png"
               alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
-              width="350"
+              width={500}
+              height={500}
             />
           </div>
           <div>
-            <p
-              className="mb-4 text-sm text-gray-600 uppercase"
-            >
+            <p className="mb-4 text-sm text-gray-600 uppercase">
               About PrintForge
             </p>
             <h2 className="mb-4 text-2xl font-semibold">
@@ -70,7 +70,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <hr className="border-gray-200"/>
+      <hr className="border-gray-200" />
 
       <section className="container max-w-3xl px-4 py-8 mx-auto">
         <div className="prose max-w-none">
@@ -79,11 +79,11 @@ export default function AboutPage() {
             At PrintForge, we believe that 3D printing is revolutionizing the
             way we create, prototype, and manufacture. Our platform serves as a
             bridge between designers and makers, enabling the sharing of
-            knowledge and creativity that pushes the boundaries of what's
+            knowledge and creativity that pushes the boundaries of what is
             possible with 3D printing.
           </p>
           <p className="text-gray-700">
-            Whether you're a hobbyist looking for your next weekend project, an
+            Whether you are a hobbyist looking for your next weekend project, an
             educator seeking teaching materials, or a professional designer
             wanting to share your creations, PrintForge provides the tools and
             community to support your journey in 3D printing.

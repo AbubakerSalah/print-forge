@@ -2,6 +2,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import Pill from "@/app/components/Pill";
 import type { ModelDetailPageProps } from "@/app/types";
 import { getModelById } from "@/app/lib/models";
+import Image from "next/image";
 
 export default async function ModelDetailPage({
   params,
@@ -14,10 +15,12 @@ export default async function ModelDetailPage({
       <article className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {/* Image Section */}
         <figure className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
-          <img
+          <Image
             src="/hero-image.png"
             alt={`3D model of ${model.name}`}
             className="absolute inset-0 object-cover w-full h-full"
+            width={500}
+            height={500}
           />
         </figure>
 
