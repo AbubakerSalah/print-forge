@@ -1,4 +1,4 @@
-import homeImage from"@/public/hero-image.png";
+import homeImage from "@/public/hero-image.png";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
             Your go-to platform for 3D printing files
           </p>
           <h1 className="text-5xl font-semibold my-4">
-            Discover what's possible with 3D printing
+            Discover whats possible with 3D printing
           </h1>
           <p className="text-2xl">
             Join our community of creators and explore a vast library of
