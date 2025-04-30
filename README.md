@@ -1,4 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PrintForge
+
+PrintForge is your go-to platform for discovering and sharing 3D printing files. Join our community of creators and explore a vast library of user-submitted models. Whether you're new to 3D printing or a seasoned maker, PrintForge offers an open space for creativity and collaboration. 
+
+The platform is built using **Next.js** and **TypeScript**, ensuring a fast, scalable, and type-safe experience. The styling is powered by **Tailwind CSS**, and fonts are optimized using **Next/font** for enhanced performance. The Figma design for the platform was created by **Scrimba** as part of a learning project while studying Next.js.
+
+
 
 ## Getting Started
 
