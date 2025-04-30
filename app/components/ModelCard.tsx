@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CiHeart } from "react-icons/ci";
+import Image from "next/image";
 
 import Pill from "./Pill";
 import { ModelCardProps } from "@/app/types";
@@ -16,10 +17,12 @@ export default function ModelCard({ model }: ModelCardProps) {
         role="article"
       >
         <div className="relative aspect-square">
-          <img
+          <Image
             src="/hero-image.png"
             alt={model.name}
             className="absolute inset-0 object-cover w-full h-full"
+            width={500}
+            height={500}
           />
         </div>
         <div className="p-4">
